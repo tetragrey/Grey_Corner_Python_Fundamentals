@@ -38,7 +38,7 @@ def test_problem_three():
 
 def test_problem_four():
     blue_in_list = problem_four()
-    assert not blue_in_list
+    assert blue_in_list is False
 
 
 def test_problem_five():
