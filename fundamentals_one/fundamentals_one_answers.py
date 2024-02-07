@@ -2,7 +2,6 @@
 
 
 def warm_up():
-    """Write your code here, then return the answer"""
     my_string = "hello world"
     my_list = ['this is a list', 'yes it is']
     my_empty_list = []
@@ -33,20 +32,17 @@ def problem_four(list_of_strings=["green", "red", "yellow", "purple", "magenta",
 
 
 def problem_five(broken_sentence=['I like to eat peaches', 'blood', 'and oranges', 'you got that?']):
-    """Write your code here, then return the answer"""
     joined_sentence = ', '.join(broken_sentence)
     return joined_sentence
 
 
 def problem_six(chicken_joke="Why did the chicken cross the road? Because she couldn't walk around it."):
-    """Write your code here, then return the answer"""
     chick_in_string = "chick" in chicken_joke
     rooster_in_string = "rooster" in chicken_joke
     return chick_in_string, rooster_in_string
 
 
 def problem_seven(mystery_number):
-    """Write your code here, then return the answer"""
     number_value = ''
     if mystery_number == 0:
         number_value = 'zero'
