@@ -36,3 +36,36 @@ def problem_five(broken_sentence=['I like to eat peaches', 'blood', 'and oranges
     """Write your code here, then return the answer"""
     joined_sentence = ', '.join(broken_sentence)
     return joined_sentence
+
+
+def problem_six(chicken_joke="Why did the chicken cross the road? Because she couldn't walk around it."):
+    """Write your code here, then return the answer"""
+    chick_in_string = "chick" in chicken_joke
+    rooster_in_string = "rooster" in chicken_joke
+    return chick_in_string, rooster_in_string
+
+
+def problem_seven(mystery_number):
+    """Write your code here, then return the answer"""
+    number_value = ''
+    if mystery_number == 0:
+        number_value = 'zero'
+    elif mystery_number > 0:
+        number_value = 'positive'
+    elif mystery_number < 0:
+        number_value = 'negative'
+    return number_value
+
+
+def problem_eight(mystery_number_list):
+    positives = 0
+    negatives = 0
+    zeroes = 0
+    for mystery_number in mystery_number_list:
+        if mystery_number == 0:
+            zeroes += 1
+        elif mystery_number > 0:
+            positives += 1
+        elif mystery_number < 0:
+            negatives += 1
+    return positives, negatives, zeroes

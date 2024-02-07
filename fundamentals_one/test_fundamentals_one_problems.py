@@ -1,5 +1,6 @@
 import pytest
-from fundamentals_one_answers import warm_up, problem_one, problem_two, problem_three, problem_four, problem_five
+from fundamentals_one_problems import warm_up, problem_one, problem_two, problem_three, problem_four, problem_five
+from fundamentals_one_problems import problem_six, problem_seven, problem_eight
 
 
 def test_warm_up():
@@ -43,6 +44,34 @@ def test_problem_four():
 def test_problem_five():
     joined_sentence = problem_five()
     assert joined_sentence == "I like to eat peaches, blood, and oranges, you got that?"
+
+
+def test_problem_six():
+    answers = [answer for answer in problem_six()]
+    assert True in answers
+    assert False in answers
+
+
+def test_problem_seven():
+    # Test for a negative value
+    positive_result = problem_seven(-1)
+    assert positive_result == 'negative'
+
+    # Test for a positive value
+    positive_result = problem_seven(4)
+    assert positive_result == 'positive'
+
+    # Test for zero
+    positive_result = problem_seven(0)
+    assert positive_result == 'zero'
+
+
+def test_problem_eight():
+    mystery_number_list = [1, 2, 3, 0, -1, 0, 4, 5]
+    answers = [answer for answer in problem_eight(mystery_number_list)]
+    assert 5 in answers
+    assert 2 in answers
+    assert 1 in answers
 
 
 if __name__ == '__main__':

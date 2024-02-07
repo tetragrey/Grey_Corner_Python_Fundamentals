@@ -51,8 +51,7 @@ you have to call the list function. For example:
 ```
 
 Call the range function to make a list from 2 to 6. It should look like this: [2, 3, 4, 5, 6]. Don't forget to use the
-list function to get to see the list. Then, return the list from 2 to 6 to pass the test.
-"""
+list function to get to see the list. Then, return the list from 2 to 6 to pass the test."""
 
 def problem_one():
     """Write your code here, then return the answer"""
@@ -120,8 +119,7 @@ When you ask whether 2 is in the list, it'll tell you either True or False. Thes
 values specifically. In the above example, two_is_in_the_list is a variable that holds the value True.
 
 You're given a list of strings called list_of_strings. Each string is the name of a color. Check whether blue is in
-the list, then return the result.
-"""
+the list, then return the result."""
 
 def problem_four(list_of_strings=["green", "red", "yellow", "purple", "magenta", "fuschia"]):
     """Write your code here, then return the answer"""
@@ -148,8 +146,7 @@ you'll be looking these up yourself on Google and ChatGPT. Don't worry about mem
 up again later when you need them.
 
 For now, though, I'm giving you a list called broken_sentence. I want you to join it with a comma and a space ', ' and
-then return the resulting string to pass the test.
-"""
+then return the resulting string to pass the test."""
 
 def problem_five(broken_sentence=['I like to eat peaches', 'blood', 'and oranges', 'you got that?']):
     """Write your code here, then return the answer"""
@@ -162,7 +159,22 @@ def problem_five(broken_sentence=['I like to eat peaches', 'blood', 'and oranges
 
 """
 Problem 6: Searching inside strings
-"""
+Searching inside strings is about as intuitive as searching inside lists! Let's say you've got a string called
+potatoes_string and you want to check whether 'potato' appears in that string. You just do:
+```
+>>> potatoes_string = "I eat potatoes with cranberry sauce"                                                                                                                                                
+>>> 'potato' in sample_string
+True
+```
+If the string you're searching for isn't in the bigger string, of course, checking whether it's there will return False.
+
+You're given a string called chicken_joke. Search for one string that's in there, and search for a different string
+that's not in there. Return the results of both searches."""
+
+def problem_six(chicken_joke="Why did the chicken cross the road? Because she couldn't walk around it."):
+    """Write your code here, then return the answer"""
+
+    return
 
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -170,7 +182,36 @@ Problem 6: Searching inside strings
 
 """
 Problem 7: Conditionals
-"""
+Conditionals are one of the most famous and essential elements of coding. By establishing that something can happen
+only if something else is true, you gain a lot of control over exactly what your code is doing.
+```
+>>> example_number = 4
+>>> if example_number == 3:
+...     print('The number is 3')
+... elif example_number == 4:
+...     print('The number is 4')
+... else:
+...     print("The number isn't 3 or 4, but other than that, who knows what it is?")
+...
+The number is 4
+```
+ - if: does the thing under it if the condition is True.
+ - else: does the thing under it if all of the if or elif conditions before it were False.
+ - elif: does the thing under it if all of the if or elif conditions before it were False AND its own condition is True.
+   (elif is, of course, short for else if)
+It's important that you get the indents right. Everything that is intended under a conditional happens if the
+condition is met; on the other hand, the conditional only does what's indented and nothing else.
+
+For this problem, I'm giving you an integer called mystery_number. You don't know what it is! I want you to find out
+whether it's positive, negative, or zero. To pass the test, you need to return a string. If the number is positive,
+the string should be 'positive'. If the number is negative, the string should be 'negative', and if the number is 0,
+the string should be -- you guessed it -- 'zero'.
+This one might take some Googling or experimenting!"""
+
+def problem_seven(mystery_number):
+    """Write your code here, then return the answer"""
+
+    return
 
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -178,8 +219,38 @@ Problem 7: Conditionals
 
 """
 Problem 8: For loops
+Loops are a way of doing the same thing to different variables. Let's take a look at this example:
+```
+>>> word_list = ['smarmy', 'unction', 'blurt']
+>>> for word in word_list:
+...     print(word)
+...
+smarmy
+unction
+blurt
 
-"""
+```
+With this one command, we printed the whole list! As you can imagine, a for loop is especially powerful when you have a
+very long list to work through.
+What did the loop do, though, exactly? Well, we gave it the list `word_list`, and then it will take each element in the
+list one by one. First, it'll pick smarmy. It'll assign 'smarmy' to the variable `word`. Then it'll execute the 
+indented code: in this simple case, it just prints what's inside the variable `word`. Then it loops back to the
+beginning and starts over with the next element in the list.
+
+For this last exercise, we're going to expand on our work with conditionals. Instead of getting one mystery number,
+now you'll be getting a whole `mystery_number_list`. You don't know what numbers are in this mystery list, and you don't
+know how many numbers are in it, either. Use a loop to find out how many of the numbers in the list are positive,
+how many are negative, and how many are 0. To pass the test, return three integer variables:
+ - The number of positive numbers in the list
+ - The number of negative numbers in the list
+ - The number of instances of the number 0 in the list
+Hint: To count things, you can create a variable with a value of 0 and then add +1 to it every time the event you're
+interested in happens ;)"""
+
+def problem_eight(mystery_number_list):
+    """Write your code here, then return the answer"""
+
+    return
 
 
-
+"""All done! Now all that's left is the project. Nice job :)"""
