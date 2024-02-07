@@ -16,7 +16,7 @@ def test_problem_one():
     test_list = problem_one()
     if test_list == [2, 3, 4, 5]:
         raise ValueError("Uh-oh! Looks like you forgot about an important detail about how range works and now you're"
-                         "\nmissing your 6 on the end! Try making your maximum value (the second argument) a bit"
+                         "\nmissing your 6 on the end! Try making your maximum value (the second argument) a bit "
                          "bigger ;)")
     if type(test_list) is type(range(2, 7)):
         raise ValueError("Don't forget to use the list function so you get the list! Otherwise you're just making a "
